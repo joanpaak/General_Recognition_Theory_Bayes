@@ -1,5 +1,7 @@
 // SOURCES:
-// Boys, R.J. (1989): Algorithm AS R80: A Remark on Algorithm AS 76: An Integral Useful in Calculating Noncentral t and Bivariate Normal Probabilities.  Journal of the Royal Statistical Society. Series C (Applied Statistics), Vol. 38, No. 3, pp. 580-582
+// Boys, R.J. (1989): Algorithm AS R80: A Remark on Algorithm AS 76: An Integral Useful 
+//   in Calculating Noncentral t and Bivariate Normal Probabilities.  Journal of the Royal 
+//   Statistical Society. Series C (Applied Statistics), Vol. 38, No. 3, pp. 580-582.
 // Pan, K. (2017): An Analytical Expression for Bivariate Normal Distribution.  https://ssrn.com/abstract=2924071
 
 functions {
@@ -52,7 +54,7 @@ functions {
       
       p = 0.5 * (Phi(h_) + Phi(k_) - deltacoeff) - owens_t(h_,  a1) - owens_t(k_, a2);
     } else{
-      // Form the "other" paper, eq. 10:
+      // From the Pan's paper, eq. 10:
       p = 0.1591549 * asin(rho) + 0.25;
     }
     
