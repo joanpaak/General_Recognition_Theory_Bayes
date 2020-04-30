@@ -1,4 +1,4 @@
-#Bayesian inference in General Recognition Theory: application to 2x2 categorization experiment
+# Bayesian inference in General Recognition Theory: application to the 2x2 categorization experiment
 
 For an introduction to General  Recognition Theory,  the following sources can be recommended:
 
