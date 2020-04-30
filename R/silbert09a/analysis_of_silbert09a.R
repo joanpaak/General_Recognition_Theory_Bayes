@@ -1,6 +1,6 @@
 setwd("C:/Users/Joni/Documents/GitHub/Generalized_Recognition_Theory_Bayes/R/silbert09a/")
 
-#### Presets #### 
+#### Load libraries, compile models etc. #### 
 
 library(mdsdt)
 library(rstan)
