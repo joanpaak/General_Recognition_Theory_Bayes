@@ -24,7 +24,7 @@ Posterior distributions for the correlation coefficients of the latent distribut
 
 ## Discussion
 
-There doesn't seem to be evidence of any interactions between the means of the latent distributions in either of the models. At least anything that could be distinguished among the remainig uncertainty about the locations. 
+There doesn't seem to be evidence of interactions between the means of the latent distributions in either of the models. At least anything that could be distinguished among the remaining uncertainty about the mus. 
 
 The posterior distributions for the correlation coefficients are faily wide, indicating lack of strong evidence to way or the other.
 
