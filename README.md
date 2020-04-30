@@ -7,6 +7,10 @@ For an introduction to General  Recognition Theory,  the following sources can b
 
 Here, I'll be limiting myself to the ubiquitous 2x2 categorization task. In such a task the participant is presented with two-dimensional stimuli; two signal levels are selected fromboth dimensions, hence the 2x2 in the name. The actual task is then to select the correct category for each stimulus. I will assume that anyone reading this  is familiar with that sort of setup. 
 
+## Include bivariate_cdf.stan!
+
+Make sure that the bivariate_cdf.stan file is in the same directory as the model. This file will be pasted to the beginning via the include. If Stan can't find the file, try removing the forward slash in the beginning. Maybe that'll fix it? I don't know!
+
 ## Formatting data for the models:
 
 You will need to provide two pieces of data. A full 4x4 confusion matrix and a matrix defining the order of stimuli and responses in which the first level is coded  with -1 and the second level with 1. 
