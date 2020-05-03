@@ -38,9 +38,11 @@ In Bayesian statistics one particularly useful way of approaching this is throug
 There are may ways of generating a posterior predictive distribution. One can use many quantities of the data as the test statistic. Here, functions are provided for generating the distribution. The plotting functions simply plot the simulated respose frequencies against oberved frequencis. You should be aware that this is not necessarily the best possible way; there might be problems that can not be revealed in this way.
 
 Model with one rho:
+
 ![alt text](four_rhos_post_pred.png "Posterior predictive distribution for the model with one rho")
 
 Model with four rhos:
+
 ![alt text](four_rhos_post_pred.png "Posterior predictive distribution for the model with four rhos")
 
 Generally, both models seem to replicate the data fairly well. In some categories, for example for stimulus (row) "high, long" the model seems to predict slightly less "low, short" responses, but I think even in that case it is correct on average. 
