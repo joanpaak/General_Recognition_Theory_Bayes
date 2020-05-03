@@ -102,3 +102,20 @@ dev.off()
 png(filename = "four_rhos_mus.png"); plotMus(fit_four_rhos, xlab = "Pitch", ylab = "Length"); dev.off()
 png(filename = "four_rhos_rhos.png"); plotRhos(fit_four_rhos, rownames(silbert09a)); dev.off()
 
+#### Posterior predictive distribution
+#
+# The posterior predictive plots are in the same order as 
+# the data in the confusion matrix. Histograms are simulated
+# data, red vertical lines are observed values.
+
+source("../posterior_predictive_distribution.R")
+
+postPredOneRho   = genPosteriorPredictive(fit_one_rho, xMat, 4000, 250)
+postPredFourRhos = genPosteriorPredictive(fit_four_rhos, xMat, 4000, 250)
+
+plotPostPred(postPredOneRho, silbert09a)
+plotPostPred(postPredFourRhos, silbert09a)
+
+png(filename = "one_rho_post_pred.png"); plotPostPred(postPredOneRho, silbert09a); dev.off()
+png(filename = "four_rhos_post_pred.png"); plotPostPred(postPredFourRhos, silbert09a); dev.off()
+
